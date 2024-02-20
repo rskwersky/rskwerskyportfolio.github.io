@@ -1,0 +1,894 @@
+/** font info
+
+regular
+font-family: "brevia", sans-serif;
+font-weight: 400;
+font-style: normal;
+
+regular italic
+font-family: "brevia", sans-serif;
+font-weight: 400;
+font-style: italic;
+
+medium
+font-family: "brevia", sans-serif;
+font-weight: 500;
+font-style: normal;
+
+medium italic
+font-family: "brevia", sans-serif;
+font-weight: 500;
+font-style: italic;
+
+semibold italic
+font-family: "brevia", sans-serif;
+font-weight: 600;
+font-style: italic;
+
+sauna pro
+font-family: "sauna-mono", sans-serif;
+font-weight: 400;
+font-style: normal;
+**/
+body{
+  overflow-x: hidden;
+}
+#rectangle1:hover ~ .circle{
+  transform: scale(0.5) translate3d(0, 0, 0);
+  background-color: #e6cf8b;
+}
+
+
+#menu-bar-content {
+    font-family: "brevia", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+    color: #1A1A3D;
+}
+
+.me-icon {
+    width: 600px;
+    height: 600px;
+}
+.ILY-icon {
+    width: 600px;
+    height: 600px;}
+
+#hello{
+    font-family: "brevia", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #1A1A3D;
+    font-size: 40px;
+}
+
+#Rachel,#Skwersky {
+    font-family: "brevia", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 85px;
+    background: -webkit-linear-gradient(left,#1A1A3D, #568F21 25%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#get-to-know {
+    font-family: "brevia", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #1A1A3D;
+    font-size: 30px;
+}
+
+#menu-bar {
+    height: 156px;
+}
+
+#menu-bar-content {
+    position: relative;
+    top: -65px;
+    left: -30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: center;
+    gap: 52px;
+    align-items: center;
+
+}
+
+
+#my-logo {
+    position: relative;
+    top: 30px;
+    left: 24px;
+
+}
+
+
+.me-icon {
+    position: relative;
+    top: -80px;
+    left: 200px;
+    z-index: 1;
+    animation: hideThere 10s ease-out 2s infinite;
+}
+ 
+.ILY-icon {
+    position: relative;
+    top: -80px;
+    left: -402.5px;
+    z-index: 0;
+
+}
+
+#main-components {
+    position: relative;
+    top: -575px;
+    left: 850px;
+    line-height: 100px;
+}
+
+
+.arrow {
+    position: absolute;
+    left: 735px;
+    top: 800px;
+}
+.bounce {
+    animation: bounce 2s infinite;
+    animation-fill-mode: forwards;
+  }
+
+@keyframes hideThere {
+    0% {opacity: 100%;}
+    25% {opacity: 0;}
+    50% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+
+  #welcome {
+    font-family: "brevia", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    color: #1A1A3D;
+    font-size: 40px;
+    position: relative;
+    top: -140px;
+    left: 575px;
+    
+
+  }
+  #desk {
+    top: -200px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    height: 800px;
+    width: 1400px;
+  }
+
+  #desk-computer{
+    top: -1010px;
+    position: relative;
+    margin-left: -10px;
+    margin-top: 10px;
+    width: 95%;
+    opacity: 0%;
+  }
+
+  #desk-computer:hover{
+    opacity: 100%;
+  }
+
+  #candle-light{
+    top: -1670px;
+    left: 448px;
+    z-index: 5;
+    opacity: 0%;
+    position: relative;
+    width: 88px;
+  }
+
+  #candle-light:hover{
+    opacity: 100%;
+  }
+
+  .rectangle1 {
+    opacity: 0%;
+    position: absolute;
+    top: 550px;
+    left: 240px;
+    z-index: 4;
+    height: 250px;
+    width: 200px;
+    background-color: #555;
+  }
+
+  .rectangle2 {
+    opacity: 0%;
+    position: absolute;
+    top: 580px;
+    left: 680px;
+    z-index: 4;
+    height: 200px;
+    width: 150px;
+    background-color: #555;
+  }
+
+  .rectangle3 {
+    opacity: 0%;
+    position: absolute;
+    top: 650px;
+    right: 290px;
+    z-index: 4;
+    height: 180px;
+    width: 150px;
+    background-color: #555;
+  }
+
+  .rectangle4 {
+    opacity: 0%;
+    position: absolute;
+    top: 400px;
+    right: 330px;
+    z-index: 4;
+    height: 180px;
+    width: 150px;
+    background-color: #555;
+  }
+
+  .rectangle5 {
+    opacity: 0%;
+    position: absolute;
+    top: 240px;
+    right: 290px;
+    z-index: 4;
+    height: 130px;
+    width: 200px;
+    background-color: #555;
+  }
+
+
+/* Media Queries for Medium Screens */
+@media screen and (min-width: 1100px) and (max-width: 1300px) {
+  .R-right{
+    opacity: 50%;
+  
+   }
+
+   .R-left{
+    opacity: 0%;
+   }
+
+  .notebook {
+    opacity: 50%;
+  }
+    #menu-bar-content {
+        font-size: 22px;
+    }
+    #about-text {
+      padding-top: 300px;
+    }
+    .me-icon,
+    .ILY-icon {
+        width: 450px;
+        height: 450px;
+    }
+
+    .me-icon {
+    left: 50px;
+
+    }
+    #main-components{
+      margin-top: 50px;
+      margin-left: -250px;
+    }
+
+    #hello {
+        font-size: 35px;
+    }
+
+    #Rachel,
+    #Skwersky {
+        font-size: 70px;
+    }
+
+    #get-to-know {
+        font-size: 25px;
+    }
+    #get-to-know:hover {
+      color: #1A1A3D;
+    }
+    #welcome {
+        font-size: 35px;
+        left: 475px;
+    }
+    .arrow{
+      opacity: 0%;}
+
+      #desk {
+        opacity: 0%;
+      }
+      
+      body{
+        overflow-x: hidden;
+      }
+    
+}
+
+/* Media Queries for small Screens */
+@media screen and (min-width: 875px) and (max-width: 1100px) {
+  .R-right{
+    opacity: 10%;
+  
+   }
+
+   .R-left{
+    opacity: 0%;
+   }
+
+  .notebook {
+    opacity: 10%;
+  }
+  
+    #menu-bar-content {
+        font-size: 25px;
+    }
+
+    .me-icon,
+    .ILY-icon {
+        margin-top: 75px;
+        width: 400px;
+        height: 400px;
+    }
+    .me-icon {
+      left: 5.25px;
+    }
+
+    #main-components{
+      margin-top: 75px;
+      margin-left: -400px;
+    }
+
+    #hello {
+        font-size: 35px;
+    }
+
+    #Rachel,
+    #Skwersky {
+        font-size: 70px;
+    }
+
+    #get-to-know {
+        font-size: 25px;
+    }
+
+    #welcome {
+        font-size: 35px;
+        left: 575px;
+    }
+
+    .arrow {
+      opacity: 0%;
+    }
+
+    #desk {
+      opacity: 0%;
+    }
+    
+    body{
+      overflow-x: hidden;
+    }
+    #get-to-know:hover {
+      color: #1A1A3D;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 875px) {
+  .R-right,.R-left{
+    opacity: 0%;
+  
+   }
+  .notebook {
+    opacity: 0%;
+  }
+  #menu-bar-content {
+    font-size: 25px;
+}
+
+.me-icon,
+.ILY-icon {
+    margin-top: 75px;
+    width: 400px;
+    height: 400px;
+}
+.me-icon {
+  margin-top: -50px;
+  margin-left: 55px;
+  animation: none;
+}
+
+
+#main-components{
+  margin-top: 25px;
+ margin-left: -600px;
+  line-height: 60px;
+}
+
+#hello {
+    font-size: 25px;
+}
+
+#Rachel,
+#Skwersky {
+    font-size: 60px;
+}
+
+
+#get-to-know {
+    font-size: 25px;
+}
+
+#welcome {
+    font-size: 35px;
+    left: 575px;
+}
+
+.arrow {
+  opacity: 0%;
+}
+
+#desk {
+  opacity: 0%;
+}
+
+body{
+  overflow-x: hidden;
+}
+#get-to-know:hover {
+  color: #1A1A3D;
+}
+  
+}
+
+  #page-title {
+    font-family: "brevia", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    color: #1A1A3D;
+    font-size: 35px;
+    position: relative;
+    top: -140px;
+    margin-left: 45%;
+  }
+
+  #about-text {
+    padding-top: 80px;
+    font-family: "sauna-mono", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    position: relative;
+    top: 350px;
+    max-width: 700px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #1A1A3D;
+    line-height: 40px;
+    margin-top: 15px;
+    padding-bottom: 80px;
+  }
+
+  .r-sign {
+    position: relative;
+ }
+ 
+ .R-right,.R-left{
+  position: absolute;
+
+ }
+
+ .R-right{
+  top: -1100px;
+  right: 70px;
+  height: 225px;
+  width:225px;
+ }
+ .R-left{
+  top: -1100px;
+  right: 70px;
+  height: 225px;
+  width:225px;
+ }
+
+
+.R-right:hover{
+  opacity: 0%;
+}
+
+#subtitle1, #subtitle2 {
+  font-family: "brevia", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  color: #1A1A3D;
+
+}
+
+#skinList, #smellList {
+  font-family: "sauna-mono", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  color: #1A1A3D;
+  line-height: 13px;
+  
+}
+
+#smells {
+  position: relative;
+  left: 200px;
+  top: -150px;
+}
+
+#lotion {
+  position: relative;
+  left: 800px;
+  top: -720px;
+
+}
+
+#lotions {
+  position: relative;
+  top: -75px;
+  left: -75px;
+}
+
+#lelabo {
+  position: relative;
+  top: -10px;
+  left: -25px;
+}
+
+a {
+  text-decoration: none;
+  color: #1A1A3D;
+}
+
+a:hover {
+  color: #568F21;
+}
+
+
+.notebook {
+  position: relative;
+  top: -1000px;
+  left: -40px;
+  height: 450px;
+  width: 450px;
+}
+
+#scrapbookbg {
+  height:800px;
+  width: auto;
+  left: 150px;
+  position: relative;
+  top: -180px;
+
+}
+
+#button{
+  position: relative;
+  right: 62px;
+  top: -525px;
+}
+
+#button2{
+  position: relative;
+  right: 970px;
+  top: -525px;
+}
+
+#place-title1, #place-title2{
+  font-family: "brevia", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  background-color: #fff;
+  color: #1A1A3D;
+  font-size: 25px;
+  border-radius: 5px;
+  width: 225px;
+  height: 37px;
+}
+
+#place-title1{
+  text-align: center;
+  position: relative;
+  top: -918px;
+  left: 430px;
+  box-shadow: 0px 2px 5px #cdb29b;
+}
+
+#place-title2{
+  text-align: center;
+  position: relative;
+  top: -950px;
+  left: 860px;
+  box-shadow: 0px 2px 5px #cdb29b;
+}
+
+#place-subtitle1, #place-subtitle2, #place-subtitle3,
+ #place-subtitle4, #place-subtitle5, #place-subtitle6, #place-subtitle7{
+  font-family: "sauna-mono", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #fff;
+  color: #1A1A3D;
+  font-size: 20px;
+  border-radius: 11px;
+  width: 130px;
+  height: 30px;
+  text-align: center;
+  box-shadow: 0px 2px 5px #cdb29b;
+}
+
+#place-subtitle1{
+  position: relative;
+  top: -890px;
+  left: 400px;
+}
+
+#bookstore{
+  position:relative;
+  top: -940px;
+  left: 370px;
+}
+
+#zondag{
+  position:relative;
+  top: -940px;
+  left: 400px;
+}
+
+#place-subtitle2{
+  position: relative;
+  top: -605px;
+  left: 470px;
+}
+
+#antique{
+  position: relative;
+  top: -600px;
+  left: 15px;
+}
+
+
+#lilypad{
+  position: relative;
+  top: -600px;
+  left: 50px;
+}
+
+#place-subtitle3{
+  position: relative;
+  top: -1020px;
+  left: 1000px;
+
+}
+
+#pie {
+  position:relative;
+  top: -810px;
+  left: 20px;
+}
+
+#buns {
+  position:relative;
+  top: -1058px;
+  left: -150px;
+}
+
+#pride {
+  position:relative;
+  top: -830px;
+  left: -315px;
+}
+
+#architectura{
+  position:relative;
+  top: -580px;
+  left: -145px;
+}
+
+
+#haus{
+  position:relative;
+  top: -800px;
+  left: 808px;
+}
+
+#cafca{
+  position:relative;
+  top: -800px;
+  left: -310px;
+  height: 100px;
+  width: 100px;
+
+}
+
+#bookstore-imgr, #zondag-imgr, #antique-imgr, #lilypad-imgr, #pie-imgr, #buns-imgr, #architectura-imgr, #pride-imgr, #haus-imgr, #shakespeare-imgr,
+#eiffel-imgr, #palace-imgr, #brekkie-imgr, #london-imgr, #mont-imgr, #city-imgr, #canal-imgr{
+  height: 500px;
+  width: 350px;
+  margin-left: 18%;
+}
+
+#bookstore:hover, #zondag:hover, #antique:hover, #lilypad:hover, #pie:hover, #buns:hover, #architectura:hover, #pride:hover, #haus-imgr:hover, 
+#shakespeare:hover,
+#eiffel:hover, #palace:hover, #brekkie:hover, #london:hover, #mont:hover, #city:hover, #canal:hover{
+  cursor: pointer;
+}
+
+#work-img1, #work-img2, #work-img3, #work-img4, #work-img5 {
+  height: 250px;
+  width: 400px;
+}
+
+.container{
+  margin: -120px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#works{
+  padding: 30px;
+}
+
+#resume-link {
+    position: relative;
+    top: 150px;
+    font-family: "sauna-mono", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    text-align: center;
+    color: #1A1A3D;
+
+}
+
+#works img:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.hidden {
+  display: none;
+}
+#lightbox-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);}
+
+  .lightbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+}
+
+.lightbox .caption {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
+  background: white;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+
+.caption {
+  font-family: "sauna-mono", sans-serif;
+font-weight: 400;
+font-style: normal;
+color: #1A1A3D;
+}
+
+#place-subtitle4{
+  position: relative;
+  top: -920px;
+  left: 370px;
+}
+
+#place-subtitle5{
+  position: relative;
+  top: -975px;
+  left: 800px;
+}
+
+#place-subtitle6{
+  position: relative;
+  top: -970px;
+  left: 1000px;
+}
+
+#place-subtitle7{
+  position: relative;
+  top: -675px;
+  left: 800px;
+}
+
+#croissant {
+  position:relative;
+  top: -850px;
+  left: -310px;
+  height: 100px;
+  width: 100px;
+}
+
+#shakespeare{
+  position:relative;
+  top: -960px;
+  left: 370px;
+}
+
+#eiffel{
+  position:relative;
+  top: -960px;
+  left: 400px;
+
+}
+
+#palace{
+  position: relative;
+  top: -680px;
+  left: 25px;
+}
+
+#brekkie{
+  position: relative;
+  top: -680px;
+  left: 50px;
+}
+
+#london{
+  position:relative;
+  top: -1030px;
+  left: 15px;
+}
+
+#city{
+  position:relative;
+  top: -980px;
+  left: 30px;
+}
+
+#mont{
+  position:relative;
+  top: -650px;
+  left: -320px;
+}
+#canal{
+  position:relative;
+  top: -700px;
+  left: -310px;
+}
